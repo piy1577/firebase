@@ -27,6 +27,9 @@ const login = () => {
     auth.signInWithEmailAndPassword(email, password)
         .then((res) => {
             console.log(res.user);
+        document.querySelector(
+                "label"
+            ).innerHTML += `<img src=${res.user.auth.photoURL}/>`;
         })
         .catch((err) => {
             alert(err.message);
