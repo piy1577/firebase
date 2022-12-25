@@ -26,7 +26,7 @@ const login = () => {
     const password = document.getElementById("password").value;
     auth.signInWithEmailAndPassword(email, password)
         .then((res) => {
-            console.log(res.user);
+            console.log(res.user.auth.photoURL);
         document.querySelector(
                 "label"
             ).innerHTML += `<img src=${res.user.auth.photoURL}/>`;
