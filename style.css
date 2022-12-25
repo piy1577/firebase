@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    width: 100vw;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 50vh;
+    width: 45vw;
+    background-color: rgba(23, 116, 209, 0.9);
+    border-radius: 20px;
+    box-shadow: 2px 2px 16px #ccc;
+}
+
+.container label {
+    font-size: 50px;
+    padding: 10px;
+    color: white;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 17vw;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.submit {
+    padding: 12px 32px;
+    color: white;
+    background-color: rgb(18, 78, 138);
+    border: none;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    transform: translate(0px, -2px);
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+input::placeholder {
+    color: white;
+}
